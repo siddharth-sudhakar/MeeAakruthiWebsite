@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact — MeeAakruthi</title>
+    <meta name="description" content="Book a consultation with the MeeAakruthi fashion designer." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Outfit:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="index.html">MeeAakruthi<span>Fashion Designer</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false">Menu</button>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="collections.html">Collections</a></li>
+          <li><a href="about.html">Fashion Designer</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <div class="container contact-grid">
+        <div class="details">
+          <p class="eyebrow">Studio</p>
+          <h1 class="serif" style="font-size: clamp(2.6rem, 5vw, 4.2rem); margin: 0 0 1rem">
+            Write to the fashion designer
+          </h1>
+          <p>Consultations are by appointment, Monday to Saturday.</p>
+          <p><strong>Email</strong><br />meeaakruthi@gmail.com</p>
+          <p><strong>Telephone</strong><br />+91 9490272298</p>
+          <p><strong>Studio</strong><br />Sainikpuri, Secunderabad - 500094</p>
+        </div>
+        <form id="enquiry-form" novalidate>
+          <label>
+            Name
+            <input type="text" name="name" autocomplete="name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" autocomplete="email" required />
+          </label>
+          <label>
+            Enquiry
+            <select name="enquiry">
+              <option value="bridal">Bridal</option>
+              <option value="couture">Couture</option>
+              <option value="rtw">Ready to wear</option>
+              <option value="press">Press</option>
+            </select>
+          </label>
+          <label>
+            Message
+            <textarea name="message" placeholder="Occasion, dates, and any notes on silhouette or cloth."></textarea>
+          </label>
+          <button class="btn btn-dark" type="submit">Send enquiry</button>
+          <p class="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <span>© 2026 MeeAakruthi</span>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

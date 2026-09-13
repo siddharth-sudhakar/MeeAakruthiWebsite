@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Collections — MeeAakruthi</title>
+    <meta name="description" content="Lookbook of couture, bridal, and ready-to-wear from MeeAakruthi." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Outfit:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="index.html">MeeAakruthi<span>Atelier</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false">Menu</button>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="collections.html" aria-current="page">Collections</a></li>
+          <li><a href="about.html">Fashion Designer</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <div class="container">
+        <p class="eyebrow">Lookbook</p>
+        <h1 class="serif" style="font-size: clamp(2.6rem, 6vw, 4.6rem); margin: 0 0 1.5rem">
+          Collections
+        </h1>
+        <div class="filters" role="toolbar" aria-label="Filter looks">
+          <button type="button" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" data-filter="couture" aria-pressed="false">Couture</button>
+          <button type="button" data-filter="bridal" aria-pressed="false">Bridal</button>
+          <button type="button" data-filter="rtw" aria-pressed="false">Ready to wear</button>
+        </div>
+        <div class="collection-grid">
+          <figure class="look-card" data-category="couture">
+            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Structured ivory coat" />
+            <figcaption>Look 01 · Couture</figcaption>
+          </figure>
+          <figure class="look-card" data-category="rtw">
+            <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Editorial ready-to-wear look" />
+            <figcaption>Look 07 · RTW</figcaption>
+          </figure>
+          <figure class="look-card" data-category="bridal">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Bride in a flowing gown" />
+            <figcaption>Look 12 · Bridal</figcaption>
+          </figure>
+          <figure class="look-card" data-category="rtw">
+            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Patterned city coat" />
+            <figcaption>Look 04 · RTW</figcaption>
+          </figure>
+          <figure class="look-card" data-category="couture">
+            <img src="https://images.unsplash.com/photo-1469334031216-e382a71b716b?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Long evening dress on a walkway" />
+            <figcaption>Look 09 · Couture</figcaption>
+          </figure>
+          <figure class="look-card" data-category="bridal">
+            <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Red evening gown" />
+            <figcaption>Look 15 · Bridal</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <span>© 2026 MeeAakruthi</span>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
