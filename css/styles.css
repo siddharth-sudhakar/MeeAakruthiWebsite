@@ -221,10 +221,10 @@ section {
   background: var(--paper);
 }
 
-.statement p {
+.statement p:not(.eyebrow) {
   font-family: "Cormorant Garamond", serif;
-  font-size: clamp(1.7rem, 3.2vw, 2.6rem);
-  line-height: 1.25;
+  font-size: clamp(1.05rem, 1.6vw, 1.25rem);
+  line-height: 1.55;
   max-width: 40rem;
   margin: 0;
 }
