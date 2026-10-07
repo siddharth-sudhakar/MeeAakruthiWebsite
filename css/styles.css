@@ -385,24 +385,6 @@ section {
   object-fit: cover;
 }
 
-.timeline {
-  margin: 2rem 0 0;
-  padding: 0;
-  list-style: none;
-}
-
-.timeline li {
-  display: grid;
-  grid-template-columns: 5.5rem 1fr;
-  gap: 1rem;
-  padding: 0.85rem 0;
-  border-bottom: 1px solid var(--sand);
-}
-
-.timeline strong {
-  letter-spacing: 0.08em;
-}
-
 .credential-section {
   background: var(--paper);
   text-align: center;
