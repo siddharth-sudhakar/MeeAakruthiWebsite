@@ -119,12 +119,35 @@ nav a[aria-current="page"] {
 
 .menu-toggle {
   display: none;
-  background: none;
+  width: 2.25rem;
+  height: 2.25rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.32rem;
+  background: transparent;
   border: 0;
-  font: inherit;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
+  padding: 0;
   cursor: pointer;
+}
+
+.menu-toggle-line {
+  width: 1.45rem;
+  height: 2px;
+  background: var(--ink);
+  transition: transform 0.3s var(--ease), opacity 0.3s var(--ease);
+}
+
+.site-header.is-open .menu-toggle-line:first-child {
+  transform: translateY(0.44rem) rotate(45deg);
+}
+
+.site-header.is-open .menu-toggle-line:nth-child(2) {
+  opacity: 0;
+}
+
+.site-header.is-open .menu-toggle-line:last-child {
+  transform: translateY(-0.44rem) rotate(-45deg);
 }
 
 /* Hero */
@@ -362,6 +385,27 @@ section {
   object-fit: cover;
 }
 
+.credential {
+  margin: 2rem 0 0;
+  padding: 1rem;
+  background: var(--paper);
+  border: 1px solid var(--sand);
+}
+
+.credential img {
+  width: 100%;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+
+.credential figcaption {
+  margin-top: 0.75rem;
+  color: var(--muted);
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
 .timeline {
   margin: 2rem 0 0;
   padding: 0;
@@ -442,7 +486,7 @@ textarea {
 
 @media (max-width: 900px) {
   .menu-toggle {
-    display: block;
+    display: inline-flex;
   }
 
   nav {

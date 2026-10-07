@@ -5,7 +5,7 @@ if (toggle && header) {
   toggle.addEventListener("click", () => {
     const open = header.classList.toggle("is-open");
     toggle.setAttribute("aria-expanded", String(open));
-    toggle.textContent = open ? "Close" : "Menu";
+    toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
   });
 }
 
@@ -33,16 +33,16 @@ if (form && status) {
     event.preventDefault();
     const data = new FormData(form);
     const name = String(data.get("name") || "").trim();
-    const email = String(data.get("email") || "").trim();
+    const phone = String(data.get("phone") || "").trim();
 
-    if (!name || !email || !email.includes("@")) {
+    if (!name || phone.length < 7) {
       status.classList.remove("ok");
-      status.textContent = "Please add your name and a valid email.";
+      status.textContent = "Please add your name and a valid phone number.";
       return;
     }
 
     status.classList.add("ok");
-    status.textContent = "Thank you. The atelier will reply within two working days.";
+    status.textContent = "Thank you. The studio will reply within two working days.";
     form.reset();
   });
 }
