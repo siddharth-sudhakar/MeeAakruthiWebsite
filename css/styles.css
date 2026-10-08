@@ -234,16 +234,32 @@ section {
 }
 
 .section-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-  gap: 1.5rem;
   margin-bottom: 2.5rem;
 }
 
 .section-head h2 {
   font-size: clamp(2.2rem, 4vw, 3.4rem);
   margin: 0;
+}
+
+.section-foot {
+  margin: 2rem 0 0;
+  text-align: center;
+}
+
+.section-foot a {
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  border-bottom: 1px solid var(--sand);
+  padding-bottom: 0.15rem;
+  transition: color 0.3s var(--ease), border-color 0.3s var(--ease);
+}
+
+.section-foot a:hover {
+  color: var(--wine);
+  border-color: var(--wine);
 }
 
 .statement {
@@ -517,8 +533,4 @@ textarea {
     padding: 3rem 1.5rem 2.5rem;
   }
 
-  .section-head {
-    flex-direction: column;
-    align-items: start;
-  }
 }
