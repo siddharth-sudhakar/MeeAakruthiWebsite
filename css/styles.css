@@ -264,6 +264,7 @@ section {
 
 .statement {
   background: var(--paper);
+  padding: 100px 0;
 }
 
 .statement p:not(.eyebrow) {
@@ -272,6 +273,73 @@ section {
   line-height: 1.55;
   max-width: 40rem;
   margin: 0;
+}
+
+
+.statement .eyebrow {
+  margin-bottom: 48px;
+  color: #a47750;
+  font-size: 11px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.statement-intro {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 56px;
+}
+
+.statement-intro h2 {
+  margin: 0;
+  font-size: clamp(32px, 4vw, 52px);
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+.statement-intro p {
+  max-width: 420px;
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.8;
+  opacity: 0.75;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid rgba(40, 30, 20, 0.2);
+}
+
+.service {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 28px 12px;
+  border-bottom: 1px solid rgba(40, 30, 20, 0.2);
+}
+
+.service:nth-child(odd) {
+  border-right: 1px solid rgba(40, 30, 20, 0.2);
+}
+
+.service-number {
+  color: #a47750;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+}
+
+.service h3 {
+  flex: 1;
+  margin: 0;
+  font-size: clamp(18px, 2vw, 24px);
+  font-weight: 400;
 }
 
 .look-grid {
@@ -436,42 +504,34 @@ section {
   gap: 3rem;
 }
 
-form {
+.contact-actions {
   display: grid;
-  gap: 1rem;
+  gap: 1.1rem;
 }
 
-label {
-  display: grid;
-  gap: 0.4rem;
-  font-size: 0.75rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-
-input,
-select,
-textarea {
-  font: inherit;
-  color: var(--ink);
+.contact-action {
   background: var(--white);
   border: 1px solid var(--sand);
-  padding: 0.85rem 0.9rem;
+  padding: 1.5rem 1.4rem 1.6rem;
 }
 
-textarea {
-  min-height: 8rem;
-  resize: vertical;
+.contact-action h2 {
+  margin: 0 0 0.5rem;
+  font-size: clamp(1.6rem, 2.4vw, 2.1rem);
 }
 
-.form-status {
-  min-height: 1.4rem;
-  font-size: 0.95rem;
+.contact-action p {
+  margin: 0;
+  color: var(--ink-soft);
 }
 
-.form-status.ok {
-  color: var(--wine);
+.contact-action .btn {
+  margin-top: 1.2rem;
+}
+
+.details a {
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
 }
 
 .details p {
@@ -492,6 +552,35 @@ textarea {
 @media (max-width: 900px) {
   .menu-toggle {
     display: inline-flex;
+  }
+  
+  .statement {
+    padding: 64px 0;
+  }
+
+  .statement .eyebrow {
+    margin-bottom: 32px;
+  }
+
+  .statement-intro {
+    display: block;
+    margin-bottom: 36px;
+  }
+
+  .statement-intro p {
+    margin-top: 16px;
+  }
+
+  .services {
+    grid-template-columns: 1fr;
+  }
+
+  .service:nth-child(odd) {
+    border-right: none;
+  }
+
+  .service {
+    padding: 24px 4px;
   }
 
   nav {

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Contact - Mee Aakruthi</title>
-    <meta name="description" content="Book a meeting with the Mee Aakruthi fashion designer studio." />
+    <meta name="description" content="Message the Mee Aakruthi designer on WhatsApp or visit the studio in Sainikpuri, Secunderabad." />
     <link rel="icon" type="image/png" href="imgs/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -37,37 +37,46 @@
         <div class="details">
           <p class="eyebrow">Studio</p>
           <h1 class="serif" style="font-size: clamp(2.6rem, 5vw, 4.2rem); margin: 0 0 1rem">
-            Write to the fashion designer
+            Contact the designer
           </h1>
           <p>Consultations are by appointment, Monday to Saturday.</p>
-          <p><strong>Telephone</strong><br />+91 99999999999</p>
-          <p><strong>Studio</strong><br />1-4-160/149, Manik Sai Enclave, Sainikpuri, Secunderabad, Telangana 500094</p>
+          <p>
+            <strong>Telephone</strong><br />
+            <a href="tel:+919490272298">+91 9490272298</a>
+          </p>
+          <p>
+            <strong>Studio</strong><br />
+            1-4-160/149, Manik Sai Enclave, Sainikpuri, Secunderabad, Telangana 500094
+          </p>
         </div>
-        <form id="enquiry-form" novalidate>
-          <label>
-            Name
-            <input type="text" name="name" autocomplete="name" required />
-          </label>
-          <label>
-            Phone Number
-            <input type="tel" name="phone" autocomplete="tel" required />
-          </label>
-          <label>
-            Enquiry
-            <select name="enquiry">
-              <option value="bridal">Bridal</option>
-              <option value="couture">Lehenga</option>
-              <option value="rtw">Saree</option>
-              <option value="press">Others</option>
-            </select>
-          </label>
-          <label>
-            Message
-            <textarea name="message" placeholder="Occasion, dates, and any notes on silhouette or cloth."></textarea>
-          </label>
-          <button class="btn btn-dark" type="submit">Send enquiry</button>
-          <p class="form-status" role="status"></p>
-        </form>
+        <div class="contact-actions">
+          <article class="contact-action">
+            <p class="eyebrow">WhatsApp</p>
+            <h2>Message the designer</h2>
+            <p>Share the occasion and what you have in mind. We will reply on WhatsApp.</p>
+            <a
+              class="btn btn-dark"
+              href="https://wa.me/919490272298?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20a%20custom%20design."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Chat on WhatsApp
+            </a>
+          </article>
+          <article class="contact-action">
+            <p class="eyebrow">Location</p>
+            <h2>Visit the studio</h2>
+            <p>Open the studio in Google Maps for directions to Manik Sai Enclave, Sainikpuri.</p>
+            <a
+              class="btn"
+              href="https://maps.app.goo.gl/UfmCiYNu9YpMpCLL9"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open in Google Maps
+            </a>
+          </article>
+        </div>
       </div>
     </section>
 

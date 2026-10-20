@@ -24,25 +24,3 @@ filterButtons.forEach((button) => {
     });
   });
 });
-
-const form = document.querySelector("#enquiry-form");
-const status = document.querySelector(".form-status");
-
-if (form && status) {
-  form.addEventListener("submit", (event) => {
-    event.preventDefault();
-    const data = new FormData(form);
-    const name = String(data.get("name") || "").trim();
-    const phone = String(data.get("phone") || "").trim();
-
-    if (!name || phone.length < 7) {
-      status.classList.remove("ok");
-      status.textContent = "Please add your name and a valid phone number.";
-      return;
-    }
-
-    status.classList.add("ok");
-    status.textContent = "Thank you. The studio will reply within two working days.";
-    form.reset();
-  });
-}
